@@ -8,10 +8,7 @@ echo "Короткий запис" >> sorted.txt
 ls /var/log -Sh >> sorted.txt
 
 #method 2 - Виведення результату пошуку у заданому форматі (розділювач NULL), сортування по першому стовпчику k1, -z - розділювач NULL, n - числове сортування
-files1=$(find /var/log -type f -printf '%s\t%f\0')
-
-while read ${files1[@]}  -r -d '' size name 
-do echo "[$size] [$name]" >> sorted2.txt
+find /var/log -type f -printf '%s\t%f\0' | sort -zn k1 | while read -r -d '' size name; do echo "[$size] [$name]" >> sorted2.txt;
 done
 
 #method 3 
