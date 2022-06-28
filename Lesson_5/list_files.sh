@@ -11,7 +11,7 @@ ls /var/log -Sh >> sorted.txt
 find /var/log -type f -printf '%s\t%f\0' | sort -zn -k1 | while read -r -d '' size name; do echo "[$size] [$name]" >> sorted2.txt;
 done
 
-#МЕТОД 3 
+#МЕТОД 3 - Отримання результатів пошуку команди find з роздільником NULL | формування аргументу для команди sort: роздільник NULL, 
 find /var/log -type f -print0 | xargs -0 wc -c | sort -nr >> sorted3.txt
 
 
