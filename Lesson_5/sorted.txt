@@ -1,57 +1,58 @@
 Довгий запис
 загалом 28M
 -rw-r----- 1 syslog adm   15M чер 26 00:00 syslog.1
--rw-r----- 1 syslog adm  5,6M чер 27 17:32 syslog
+-rw-r----- 1 syslog adm  5,9M чер 28 12:49 syslog
 -rw-r----- 1 syslog adm  4,5M чер 26 00:00 kern.log.1
--rw-r----- 1 syslog adm  1,7M чер 27 17:32 kern.log
+-rw-r----- 1 syslog adm  1,8M чер 28 12:48 kern.log
 -rw-r----- 1 root   adm  135K чер 27 10:48 dmesg
 -rw-r----- 1 root   adm  134K чер 27 09:16 dmesg.0
+-rw-r----- 1 syslog adm  108K чер 28 12:49 auth.log
 -rw-r--r-- 1 root   root  95K чер 27 10:44 dpkg.log
 -rw-r----- 1 syslog adm   82K чер 25 23:30 auth.log.1
--rw-r----- 1 syslog adm   79K чер 27 17:32 auth.log
--rw------- 1 root   root  43K чер 27 09:07 boot.log.1
--rw------- 1 root   root  28K чер 25 17:12 boot.log.3
+-rw------- 1 root   root  43K чер 27 09:07 boot.log.2
+-rw------- 1 root   root  28K чер 25 17:12 boot.log.4
 -rw-r----- 1 root   adm   26K чер 26 10:33 dmesg.4.gz
 -rw-r----- 1 root   adm   26K чер 26 15:17 dmesg.3.gz
 -rw-r----- 1 root   adm   26K чер 27 09:07 dmesg.1.gz
 -rw-r----- 1 root   adm   26K чер 26 15:20 dmesg.2.gz
 -rw-rw-r-- 1 root   utmp  24K чер 27 10:49 wtmp
--rw------- 1 root   root  22K чер 27 10:48 boot.log
--rw------- 1 root   root  20K чер 24 08:19 boot.log.4
--rw------- 1 root   root  17K чер 23 09:43 boot.log.5
+-rw------- 1 root   root  22K чер 28 09:11 boot.log.1
+-rw------- 1 root   root  20K чер 24 08:19 boot.log.5
+-rw------- 1 root   root  17K чер 23 09:43 boot.log.6
 -rw-r--r-- 1 root   root  12K чер 24 08:58 fontconfig.log
--rw------- 1 root   root 9,0K чер 21 08:33 boot.log.6
+-rw------- 1 root   root 9,0K чер 21 08:33 boot.log.7
+-rw------- 1 root   root 5,5K чер 28 09:11 vmware-vmsvc-root.log
 -rw------- 1 root   root 5,1K чер 27 10:48 vmware-vmtoolsd-root.log
 -rw------- 1 root   root 4,4K чер 26 22:25 vmware-vmsvc-root.3.log
 -rw------- 1 root   root 4,3K чер 27 09:15 vmware-vmsvc-root.2.log
--rw------- 1 root   root 4,1K чер 27 13:59 vmware-vmsvc-root.log
 drwxr-xr-x 2 root   root 4,0K чер 27 09:16 apt
-drwxr-x--- 2 root   lp   4,0K чер 27 09:07 cups
+drwxr-x--- 2 root   lp   4,0K чер 28 09:11 cups
 drwxr-xr-x 2 root   root 4,0K чер 20 23:00 expressvpn
 drwx--x--x 2 root   gdm  4,0K чер 20 23:00 gdm3
 drwx------ 2 root   root 4,0K чер 20 23:00 private
 drwxr-xr-x 2 root   root 4,0K чер 21 08:33 unattended-upgrades
 -rw------- 1 root   root 3,8K чер 27 10:48 vmware-vmsvc-root.1.log
--rw------- 1 root   root 1,8K чер 26 00:00 boot.log.2
--rw-r--r-- 1 root   root 1,7K чер 27 09:14 ubuntu-advantage-timer.log
+-rw-r--r-- 1 root   root 1,9K чер 28 09:37 ubuntu-advantage-timer.log
+-rw------- 1 root   root 1,8K чер 26 00:00 boot.log.3
 -rw-r--r-- 1 root   root 1,3K чер 27 10:48 gpu-manager.log
 -rw-r--r-- 1 root   root  578 чер 24 08:58 alternatives.log
 -rw-r----- 1 root   adm   541 чер 22 01:14 apport.log.4.gz
 -rw-r----- 1 root   adm   476 чер 26 12:02 apport.log.1
 -rw-r----- 1 root   adm   404 чер 25 18:40 apport.log.2.gz
--rw-r--r-- 1 root   root  337 чер 27 12:00 vmware-network.log
--rw-r--r-- 1 root   root  328 чер 24 20:53 vmware-network.6.log
--rw-r--r-- 1 root   root  328 чер 24 08:55 vmware-network.7.log
+-rw-r--r-- 1 root   root  337 чер 27 19:46 vmware-network.1.log
+-rw-r--r-- 1 root   root  337 чер 27 12:00 vmware-network.2.log
+-rw-r--r-- 1 root   root  331 чер 28 09:11 vmware-network.log
+-rw-r--r-- 1 root   root  328 чер 24 20:53 vmware-network.8.log
+-rw-r--r-- 1 root   root  328 чер 24 08:55 vmware-network.9.log
 -rw-r----- 1 root   adm   325 чер 20 13:59 apport.log.5.gz
--rw-r--r-- 1 root   root  319 чер 23 11:26 vmware-network.9.log
 -rw-r----- 1 root   adm   290 чер 23 22:26 apport.log.3.gz
--rw-r--r-- 1 root   root  243 чер 27 09:07 vmware-network.1.log
--rw-r--r-- 1 root   root  231 чер 26 15:19 vmware-network.3.log
--rw-r--r-- 1 root   root  231 чер 26 09:57 vmware-network.4.log
--rw-r--r-- 1 root   root  231 чер 25 17:12 vmware-network.5.log
--rw-r--r-- 1 root   root  231 чер 23 18:36 vmware-network.8.log
--rw-r--r-- 1 root   root  229 чер 26 15:19 vmware-network.2.log
+-rw-r--r-- 1 root   root  243 чер 27 09:07 vmware-network.3.log
+-rw-r--r-- 1 root   root  231 чер 26 15:19 vmware-network.5.log
+-rw-r--r-- 1 root   root  231 чер 26 09:57 vmware-network.6.log
+-rw-r--r-- 1 root   root  231 чер 25 17:12 vmware-network.7.log
+-rw-r--r-- 1 root   root  229 чер 26 15:19 vmware-network.4.log
 -rw-r----- 1 root   adm     0 чер 27 09:07 apport.log
+-rw------- 1 root   root    0 чер 28 09:11 boot.log
 -rw-rw---- 1 root   utmp    0 чер 20 23:00 btmp
 -rw-rw-r-- 1 root   utmp    0 чер 20 23:00 lastlog
 
@@ -62,25 +63,25 @@ kern.log.1
 kern.log
 dmesg
 dmesg.0
+auth.log
 dpkg.log
 auth.log.1
-auth.log
-boot.log.1
-boot.log.3
+boot.log.2
+boot.log.4
 dmesg.4.gz
 dmesg.3.gz
 dmesg.1.gz
 dmesg.2.gz
 wtmp
-boot.log
-boot.log.4
+boot.log.1
 boot.log.5
-fontconfig.log
 boot.log.6
+fontconfig.log
+boot.log.7
+vmware-vmsvc-root.log
 vmware-vmtoolsd-root.log
 vmware-vmsvc-root.3.log
 vmware-vmsvc-root.2.log
-vmware-vmsvc-root.log
 apt
 cups
 expressvpn
@@ -88,25 +89,26 @@ gdm3
 private
 unattended-upgrades
 vmware-vmsvc-root.1.log
-boot.log.2
 ubuntu-advantage-timer.log
+boot.log.3
 gpu-manager.log
 alternatives.log
 apport.log.4.gz
 apport.log.1
 apport.log.2.gz
+vmware-network.1.log
+vmware-network.2.log
 vmware-network.log
+vmware-network.8.log
+vmware-network.9.log
+apport.log.5.gz
+apport.log.3.gz
+vmware-network.3.log
+vmware-network.5.log
 vmware-network.6.log
 vmware-network.7.log
-apport.log.5.gz
-vmware-network.9.log
-apport.log.3.gz
-vmware-network.1.log
-vmware-network.3.log
 vmware-network.4.log
-vmware-network.5.log
-vmware-network.8.log
-vmware-network.2.log
 apport.log
+boot.log
 btmp
 lastlog
