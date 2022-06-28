@@ -11,7 +11,7 @@ do
     echo "$file is an executable Linux file" >> executable.txt
     ((exec++))
     else
-    echo "$file is not executable Linux file" >> executable.txt
+    echo "$file is NOT executable Linux file" >> executable.txt
     ((notexec++))
     fi
 done
@@ -27,7 +27,7 @@ then
     then
     echo "$file is an executable Linux file" >> executable2.txt
     else
-    echo "$file is not executable Linux file" >> executable2.txt
+    echo "$file is NOT executable Linux file" >> executable2.txt
     fi
 fi
 done
