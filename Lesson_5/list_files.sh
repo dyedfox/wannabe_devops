@@ -1,24 +1,24 @@
 #!/bin/bash 
 
-#method 1 - найпростіший спосіб - це скористатися можливостям команди ls. -lSh - list, Sort, human-readable
-echo "Довгий запис" > sorted.txt
+#МЕТОД 1 - найпростіший спосіб - це скористатися можливостями команди ls. -lSh - list, Sort, human-readable
+echo "Довгий запис" >> sorted.txt
 ls /var/log -lSh >> sorted.txt
 echo "" >> sorted.txt
 echo "Короткий запис" >> sorted.txt
 ls /var/log -Sh >> sorted.txt
 
-#method 2 - Виведення результату пошуку у заданому форматі (розділювач NULL), сортування по першому стовпчику k1, -z - розділювач NULL, n - числове сортування
-files1=$(find /var/log -type f -printf '%s\t%f\0')
+#МЕТОД 2 - Отримання результату пошуку командою find (-f - файли, '%s\t%f\0': %s - вибір текстової частини, %f - число, \t - таб, \0 - роздільник NULL) | сортування: -z - роздільник NULL, -n - числове сортування, -k1 - по першому стовпчику | порядкове перебирання результатів, розділення їх по нульовому роздільнику, з ігноруванням зворотніх слешів, на розмір та назву і виведення у файл з результатом
 
-while read ${files1[@]}  -r -d '' size name 
-do echo "[$size] [$name]" >> sorted2.txt
+#find /var/log -type f -printf '%s\t%f\n' - виведення результатів в термінал у читабельній формі
+
+find /var/log -type f -printf '%s\t%f\0' | sort -zn -k1 | while read -r -d '' size name; do echo "[$size] [$name]" >> sorted2.txt;
 done
 
-#method 3 
-find /var/log -type f -print0 | xargs -0 wc -c | sort -nr > sorted3.txt
+#МЕТОД 3 - Приклад, який я знайшов на StackOverflow. Отримання результатів пошуку команди find з роздільником NULL | формування аргументу для команди sort: роздільник NULL, wc - слова і символи, -с - ось цього не розумію, так і не знайшов значення цієї опції. Без неї - виводиться кілька чисел, з нею - тільки повний розмір файлу.
+find /var/log -type f -print0 | xargs -0 wc -c | sort -nr >> sorted3.txt
 
 
-#method 4
+#МЕТОД 4 - Отримання у масив результатів виконання команди ls (попередньо посортованих) і виведення порядково у файл з нумерацією.
 IFS=$'\n'
 
 files=$(ls /var/log -lSh)
