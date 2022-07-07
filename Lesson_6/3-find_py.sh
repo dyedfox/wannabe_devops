@@ -1,0 +1,1 @@
+find -name "*.py" > py_scripts.txt 2>py_errors.txt
